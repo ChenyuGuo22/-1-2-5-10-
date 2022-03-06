@@ -1,0 +1,22 @@
+int main() 
+{
+	int x;
+	float send;
+	int five;
+	int  surplus;
+	int two;
+	int one;
+	scanf("%f",&send);
+	x = send * 10;
+
+	five = x / 5;
+	surplus = x % 5;
+	two = surplus / 2;
+	if (surplus >= 3) 
+	{
+		surplus = surplus % 2;
+	}
+	one = surplus / 1;
+	printf("need %d five cent %d two cent %d one cent ", five,two,one);
+	return 0;
+}
