@@ -1,0 +1,33 @@
+#define _CRT_SECURE_NO_WARNINGS 
+#include <stdio.h>
+
+int main() 
+{
+	int a, b;
+
+	scanf("%d %d", &a, &b);
+	int an, bn;
+	int ad = 1;
+	int bd = 1;
+	int mod;
+	
+	for (int i = 1,j = 1; i <=a || j<=a; j++,i++)
+	{
+		an = a % i;
+		bn = b % j;
+		if (an == 0)
+		{
+			ad = i;
+		}
+		if (bn == 0)
+		{
+			bd = j;
+		}
+		if (bd == ad)
+		{
+			mod = bd;
+		}
+	}
+	printf("mod = %d", mod);
+	return 0;
+}
